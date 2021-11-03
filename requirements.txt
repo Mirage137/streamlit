@@ -1,3 +1,2 @@
-pickle==4.0
-py -m pip install SomePackage==1.0.4
-pandas==1.2.4
+py pip install joblib==1.0.4
+py pip install pandas==1.2.4
