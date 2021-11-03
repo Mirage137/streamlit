@@ -1,2 +1,4 @@
-pip install joblib==1.0.4
-pip install pandas==1.2.4
+streamlit==1.1.0
+pickle==4.0
+joblib==1.0.4
+pandas==1.2.4
