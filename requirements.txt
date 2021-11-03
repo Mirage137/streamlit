@@ -1,2 +1,2 @@
-py pip install joblib==1.0.4
-py pip install pandas==1.2.4
+pip install joblib==1.0.4
+pip install pandas==1.2.4
