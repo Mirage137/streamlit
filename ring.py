@@ -3,7 +3,7 @@ import pickle
 import joblib
 import pandas as pd
 
-model = joblib.load('../models/best_logit_model_188.pkl')
+model = joblib.load('./best_logit_model_188.pkl')
 
 @st.cache()
 
