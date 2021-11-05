@@ -34,7 +34,7 @@ SUPPORT VECTOR
 st.markdown(html, unsafe_allow_html = True)
 st.title("How are you feeling?")
 
-page = st.selectbox("Select a page",("Make a prediction", "Resources"))
+page = st.selectbox("Select a page",("Emotional Assesment", "Resources"))
 
 if page == "Resources":
     st.write("Suicide Prevention Lifeline")
@@ -42,7 +42,7 @@ if page == "Resources":
         webbrowser.open_new_tab("https://suicidepreventionlifeline.org/")
 
 
-if page == "Emotional Assement":
+if page == "Emotional Assesment":
     st.write("Can we tell if you're anxious or depressed?:")
     user_response = st.text_input("What's on your mind?", value="Tell us how you're feeling...")
 
