@@ -39,7 +39,7 @@ page = st.selectbox("Select a page",("Make a prediction", "Resources"))
 if page == "Resources":
     st.write("Suicide Prevention Lifeline")
     if st.button("Help is available."):
-        webbrowser.open_new_tab("https://suicidepreventionlifeline.org/"")
+        webbrowser.open_new_tab("https://suicidepreventionlifeline.org/")
 
 
 if page == "Emotional Assement":
