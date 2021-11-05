@@ -18,7 +18,7 @@ def prediction_threshold(text):
         else:
             subr = "anxious"
     else:
-        subr = "indeterminite"
+        subr = "We can't tell. If you're need help, please consult our resources page."
 
     return subr
 
@@ -36,14 +36,17 @@ st.title("How are you feeling?")
 
 page = st.selectbox("Select a page",("Make a prediction", "Resources"))
 
-if page == "Seeking Help":
-        st.write("Can we guess how you're feeling?")
+if page == "Resources":
+    st.write("Suicide Prevention Lifeline")
+    if st.button("Help is available."):
+    webbrowser.open_new_tab("https://suicidepreventionlifeline.org/"")
 
-if page == "Make a prediction":
+
+if page == "Emotional Assement":
     st.write("Can we tell if you're anxious or depressed?:")
-    user_response = st.text_input("Where are you going?", value="Tell us how you're feeling...")
+    user_response = st.text_input("What's on your mind?", value="Tell us how you're feeling...")
 
-    if st.button("My mood?"):
+    if st.button("?"):
         mood = prediction_threshold(user_response)
         #lambda x: 1 if user_response.split() in ["suicide", "suicidal", "kill"]
         #if flag == 1:
